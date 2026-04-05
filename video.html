@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Netflix Rewards - Vídeo</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #fff;
+            color: #333;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 480px;
+            margin: 0 auto;
+            background: #fff;
+        }
+
+        /* Warning Banner */
+        .warning-banner {
+            background: #dc2626;
+            color: #fff;
+            text-align: center;
+            padding: 12px 14px;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        /* Check Icon */
+        .check-icon {
+            width: 60px;
+            height: 60px;
+            background: #22c55e;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 12px;
+        }
+
+        .check-icon svg {
+            width: 36px;
+            height: 36px;
+            fill: #fff;
+        }
+
+        /* Video Header */
+        .video-header {
+            padding: 20px 16px 16px;
+            text-align: center;
+        }
+
+        .video-header h1 {
+            font-size: 20px;
+            font-weight: 900;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+
+        .video-header p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        /* Video Section */
+        .video-section {
+            width: 100%;
+            background: #000;
+            margin-bottom: 4px;
+        }
+
+        .video-section div {
+            width: 100%;
+        }
+
+        /* Comments */
+        .comments-section {
+            padding: 0 16px 16px;
+        }
+
+        .comment {
+            display: flex;
+            gap: 12px;
+            padding: 16px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .comment:last-child {
+            border-bottom: none;
+        }
+
+        .comment-avatar {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 14px;
+            color: #fff;
+        }
+
+        .comment-body {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .comment-name {
+            font-weight: 700;
+            font-size: 15px;
+            color: #1a1a1a;
+            margin-bottom: 4px;
+        }
+
+        .comment-text {
+            font-size: 14px;
+            color: #333;
+            line-height: 1.5;
+            margin-bottom: 8px;
+        }
+
+        .comment-actions {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 13px;
+            color: #666;
+        }
+
+        .comment-actions .like-btn {
+            color: #666;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .comment-actions .like-count {
+            color: #999;
+        }
+
+        .comment-actions .separator {
+            color: #ccc;
+        }
+
+        .comment-actions .reply-btn {
+            color: #666;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .comment-actions .time {
+            color: #999;
+            margin-left: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Warning Banner -->
+    <div class="warning-banner">
+        ⚠️ <strong>ATENÇÃO: Este vídeo pode sair do ar a qualquer momento!</strong>
+    </div>
+
+    <div class="container">
+
+        <!-- Video Header -->
+        <div class="video-header">
+            <div class="check-icon">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+            </div>
+            <h1>em saldo real no mpesa/emola</h1>
+            <p>Vê o vídeo abaixo e aprende como fazer isso passo a passo 👇</p>
+        </div>
+
+        <!-- Video - COLE EMBED VTURB AQUI -->
+        <div class="video-section">
+            <div id="vturb-video">
+                <vturb-smartplayer id="vid-69d2df6fd48f26972967f8a2" style="display:block;width:100%;"></vturb-smartplayer>
+                <script type="text/javascript">
+                    var s=document.createElement("script"); s.src="https://scripts.converteai.net/e9be14cf-afa2-44b0-a1c8-54721a1cf2c2/players/69d2df6fd48f26972967f8a2/v4/player.js", s.async=!0,document.head.appendChild(s);
+                </script>
+            </div>
+        </div>
+
+        <!-- Comments -->
+        <div class="comments-section">
+
+            <div class="comment">
+                <div class="comment-avatar" style="background:#6366f1;">HM</div>
+                <div class="comment-body">
+                    <div class="comment-name">Herminio Mabiala</div>
+                    <div class="comment-text">Quem ainda tá a duvidar é porque gosta de sofrer, isso é dos truques mais fresh que já vi online. Recomendo mesmo! 💯</div>
+                    <div class="comment-actions">
+                        <span>👍</span>
+                        <a href="#" class="like-btn">Curtir</a>
+                        <span class="separator">·</span>
+                        <span class="like-count">19</span>
+                        <span class="separator">·</span>
+                        <a href="#" class="reply-btn">Responder</a>
+                        <span class="time">há 2 min</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-avatar" style="background:#ec4899;">AS</div>
+                <div class="comment-body">
+                    <div class="comment-name">Anabela Sitoe</div>
+                    <div class="comment-text">Kkk juro que pensei que era mais uma burla, mas testei e não é! Já recebi no meu mpesa 😭 Obrigada!! 🙏</div>
+                    <div class="comment-actions">
+                        <span>👍</span>
+                        <a href="#" class="like-btn">Curtir</a>
+                        <span class="separator">·</span>
+                        <span class="like-count">23</span>
+                        <span class="separator">·</span>
+                        <a href="#" class="reply-btn">Responder</a>
+                        <span class="time">há 5 min</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-avatar" style="background:#3b82f6;">DC</div>
+                <div class="comment-body">
+                    <div class="comment-name">Domingos Cossa</div>
+                    <div class="comment-text">Recebi 15.360 meticais hoje de manhã! Não acreditava mas é real demais. Contem comigo sempre 😁</div>
+                    <div class="comment-actions">
+                        <span>👍</span>
+                        <a href="#" class="like-btn">Curtir</a>
+                        <span class="separator">·</span>
+                        <span class="like-count">41</span>
+                        <span class="separator">·</span>
+                        <a href="#" class="reply-btn">Responder</a>
+                        <span class="time">há 8 min</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-avatar" style="background:#22c55e;">FN</div>
+                <div class="comment-body">
+                    <div class="comment-name">Fátima Nhantumbo</div>
+                    <div class="comment-text">Partilhei com minha prima e ela também já levantou. Simples e funciona mesmo! 💚</div>
+                    <div class="comment-actions">
+                        <span>👍</span>
+                        <a href="#" class="like-btn">Curtir</a>
+                        <span class="separator">·</span>
+                        <span class="like-count">9</span>
+                        <span class="separator">·</span>
+                        <a href="#" class="reply-btn">Responder</a>
+                        <span class="time">há 12 min</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
